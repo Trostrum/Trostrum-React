@@ -2,7 +2,7 @@ import './Navbar.scss'
 
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import navBrand from '../../images/navbrand.webp'
 
 export default function HomeNav() {
 
@@ -19,7 +19,7 @@ export default function HomeNav() {
         <div className='upper-nav'>
           <div className='left'>
             <div className='left-item'>
-              <p>trostrum@gmail.com</p>
+              <p>contact@trostrum.com</p>
             </div>
           </div>
           <div className='right'>
@@ -31,7 +31,7 @@ export default function HomeNav() {
       <nav className='navbar-wrapper'>
         <div className='navbar'>
           <div className='nav-brand'>
-            <h2>Logo</h2>
+            <img src={navBrand} alt={'trostrum'}/>
           </div>
           <div className={`nav-list ${isResponsive ? 'responsive' : ''}`}>
             <Link to='/' className='nav-item' onClick={toggleResponsive}>Home</Link>

@@ -55,9 +55,8 @@
   }
 
   .nav-brand {
-    h2 {
-      font-size: 2rem;
-      color: #a2b2bb;
+    img{
+      width: 6rem;
     }
   }
 
@@ -112,7 +111,7 @@
   }
 }
 
-@media(max-width: 950px) {
+@media(max-width: 768px) {
   .upper-nav-wrapper {
     display: none;
   }
@@ -155,7 +154,7 @@
       right: 0;
       width: 100%;
       transition: all 4s ease-out;
-      @media screen and (max-width: 576px){
+      @media screen and (max-width: 768px){
         z-index: 10;
         top: 5rem;
         background-color: #212332;
