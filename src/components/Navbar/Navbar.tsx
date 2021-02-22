@@ -1,65 +1,52 @@
-import './index.scss'
+import './Navbar.scss'
+
 import { useState } from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-export default function Navbar() {
+export default function HomeNav() {
 
-  const history = useHistory()
-
-  const onLogout =() => {
-    localStorage.removeItem('userId')
-    localStorage.removeItem('accessToken')
-    localStorage.removeItem('isAuthenticated')
-    localStorage.removeItem('role')
-    history.push('/admin/login')
-  }
   // state for responsive navbar
-  const [isResponsive, setIsResponsive] = useState(false)
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    title: {
-      flexGrow: 1,
-    },
-    menu:{
-      color: 'black'
-    }
-  }))
-  const classes = useStyles()
+  const [isResponsive, setIsResponsive] = useState<boolean>(false)
+
   const toggleResponsive = () => {
     setIsResponsive(!isResponsive)
   }
 
-  const isAdmin = () => {
-    if(localStorage.getItem('role') === 'admin'){
-      return <Link to="/admin/users" className='link' onClick={() => { setIsResponsive(false) }}><Button className='link-btn' >Users</Button></Link>
-    }
-  }
   return (
-    <AppBar position='static'>
-      <Toolbar className='navbar'>
-        <Typography variant="h6" className={ classes.title }>
-          Admin Panel
-        </Typography>
-        <div className={ `link-wrapper ${ isResponsive ? 'responsive' : '' }` }>
-          <Link to="/admin/" className='link' onClick={() => { setIsResponsive(false) }}><Button className='link-btn'>Products</Button></Link>
-          <Link to="/admin/model" className='link' onClick={() => { setIsResponsive(false) }}><Button className='link-btn' >Model</Button></Link>
-          {isAdmin()}
-          <span className='link' onClick={() => { setIsResponsive(false) }}><Button className='link-btn' color="inherit" onClick={onLogout}>Logout</Button></span>
+    <>
+      <div className='upper-nav-wrapper'>
+        <div className='upper-nav'>
+          <div className='left'>
+            <div className='left-item'>
+              <p>trostrum@gmail.com</p>
+            </div>
+          </div>
+          <div className='right'>
+            <Link className='link' to=''>Contact Us</Link>
+            <Link className='link' to=''>Terms & Conditions</Link>
+          </div>
         </div>
-        <IconButton edge="start" className='menu' aria-label="menu" onClick={() => { toggleResponsive() }}>
-          <MenuIcon style={{ color : isResponsive ? 'black' : 'white' }}/>
-        </IconButton>
-      </Toolbar>
-    </AppBar>
+      </div>
+      <nav className='navbar-wrapper'>
+        <div className='navbar'>
+          <div className='nav-brand'>
+            <h2>Logo</h2>
+          </div>
+          <div className={`nav-list ${isResponsive ? 'responsive' : ''}`}>
+            <Link to='/' className='nav-item' onClick={toggleResponsive}>Home</Link>
+            <a href='/#about' className='nav-item' onClick={toggleResponsive}>About</a>
+            <a href='/#services' className='nav-item' onClick={toggleResponsive}>Services</a>
+            <Link to='/products' className='nav-item' onClick={toggleResponsive}>Products</Link>
+            <a href='/#contact' className='nav-item' onClick={toggleResponsive}>Contact</a>
+          </div>
+          <div className={`hamburger ${isResponsive ? 'open' : ''}`} onClick={toggleResponsive}>
+            <div className='div1'></div>
+            <div className='div2'></div>
+            <div className='div3'></div>
+          </div>
+        </div>
+      </nav>
+    </>
   )
 }
