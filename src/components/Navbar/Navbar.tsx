@@ -41,9 +41,9 @@ export default function HomeNav() {
             <a href='/#contact' className='nav-item' onClick={toggleResponsive}>Contact</a>
           </div>
           <div className={`hamburger ${isResponsive ? 'open' : ''}`} onClick={toggleResponsive}>
-            <div className='div1'></div>
-            <div className='div2'></div>
-            <div className='div3'></div>
+            <div className='div1'/>
+            <div className='div2'/>
+            <div className='div3'/>
           </div>
         </div>
       </nav>

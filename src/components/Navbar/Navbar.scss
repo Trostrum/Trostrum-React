@@ -1,7 +1,7 @@
 .upper-nav-wrapper {
     background: #212332;
     color: #a2b2bb;
-    padding: 15px 4%;
+    padding: 15px 0;
     border-bottom: .5px solid #313347;
     z-index: 10;
   .upper-nav {
@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 6%;
   }
 
   .left {
@@ -50,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 4%;
+    padding: 1rem 5%;
   }
 
   .nav-brand {
@@ -71,9 +72,26 @@
       letter-spacing: 1px;
       color: #ffffff;
       transition: all .3s ease-in-out ;
+
+      &:last-of-type{
+        padding-right: 0;
+      }
+
+      &:after {
+        transition: all ease-in-out .2s;
+        background: none repeat scroll 0 0 #007bff;
+        content: "";
+        display: block;
+        height: 1.5px;
+        width: 0;
+      }
+
       &:hover {
         color: #007bff;
-        border-bottom: 2px solid #007bff;
+        //border-bottom: 2px solid #007bff;
+        &:after {
+          width: 100%;
+        }
       }
     }
   }
@@ -82,13 +100,13 @@
     cursor: pointer;
     display: none;
     div{
-      height: 0.23rem;
+      height: 0.15rem;
       width: 2rem;
       &:first-child{
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.3rem;
       }
       &:last-child{
-        margin-top: 0.25rem;
+        margin-top: 0.3rem;
       }
     }
   }
@@ -101,7 +119,6 @@
   .navbar-wrapper {
     position: fixed;
     width: 100%;
-    padding: 1.2rem 1rem;
     top: 0;
     left: 0;
     z-index: 5;
@@ -137,23 +154,36 @@
       left: 0;
       right: 0;
       width: 100%;
-      transition: .5s all ease-in-out;
+      transition: all 4s ease-out;
+      @media screen and (max-width: 576px){
+        z-index: 10;
+        top: 5rem;
+        background-color: #212332;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 0;
+        transition: .5s all ease-in-out;
+        .nav-item{
+          color: #fff;
+          margin-bottom: 3.5rem;
+          padding: 0.5rem 0;
+          margin-left: 0;
+          display: none;
+          &:first-child{
+            margin-top: 1rem;
+          }
+          &:hover{
+            color: #007bff;
+            border: none;
+          }
+        }
+      }
     }
     .nav-list.responsive{
-      z-index: 10;
-      top: 5rem;
-      background-color: #212332;
-      text-align: center;
+      height: 100%;
       .nav-item{
-        color: #fff;
-        margin-bottom: 3.5rem;
-        &:first-child{
-          margin-top: 1rem;
-        }
-        &:hover{
-          color: #007bff;
-          border: none;
-        }
+        display: block;
       }
     }
 
