@@ -5,15 +5,27 @@
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Doris', 'Roboto', sans-serif !important;
+  font-family: 'Doris', sans-serif !important;
 }
 
-html, body{
+html, body, #root{
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+
+button{
+  padding: 15px 55px;
+  border-radius: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+  display: inline-block;
 }
 
 body {
