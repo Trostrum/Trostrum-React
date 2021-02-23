@@ -1,7 +1,14 @@
+.full-navbar-wrapper{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
 .upper-nav-wrapper {
     background: #212332;
     color: #a2b2bb;
-    padding: 15px 0;
+    padding: 0.5rem 0;
     border-bottom: .5px solid #313347;
     z-index: 10;
   .upper-nav {
@@ -18,7 +25,7 @@
     .left-item {
       color: #a2b2bb;
       p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 400;
       }
     }
@@ -28,7 +35,7 @@
     .link {
       color: #a2b2bb;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       transition: all .5s ease-in-out;
       margin-left: 1.3rem;
       &:hover{
