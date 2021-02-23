@@ -14,7 +14,7 @@ export default function HomeNav() {
   }
 
   return (
-    <>
+    <div className={'full-navbar-wrapper'}>
       <div className='upper-nav-wrapper'>
         <div className='upper-nav'>
           <div className='left'>
@@ -47,6 +47,6 @@ export default function HomeNav() {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   )
 }
