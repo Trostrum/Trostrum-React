@@ -1,5 +1,5 @@
 import Navbar from '../Navbar/Navbar'
-// import Welcome from './../Welcome/Welcome'
+import Welcome from './../Welcome/Welcome'
 // import About from './../About/About'
 // import Banner from './../Banner/Banner'
 // import Services from './../Services/Services'
@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      {/* <Welcome />
-      <About />
+      <Welcome />
+      {/* <About />
       <Banner />
       <Services />
       <LatestProduct />

@@ -1,83 +1,120 @@
 .welcome-wrapper{
-    position: relative;
-    background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.75),rgba(0,0,0,0.5)), url('./../../images/welcome.webp');
-    background-size: cover;
+    background-image: linear-gradient(to bottom, rgb(34,40,49, 0.9), rgba(34,40,49, 0.9)),url('./../../images/team.jpg');
     background-repeat: no-repeat;
-    width: 100%;
-    height: 85vh;
-    font-size: #fff;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
     .welcome-text-wrapper{
         position: absolute;
+        width: 100%;
+        margin: auto;
         top: 50%;
         transform: translateY(-50%);
-        margin-left: 5rem;
-        color: #fff;
-        .welcome{
-            font-size: 2.2rem;
+        text-align: center;
+        padding: 0 1rem;
+        p{
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #13b1c5;
         }
         h1{
-            font-size: 4rem;
-            margin-top: 0.5rem;
+            font-size: 3.8rem;
+            color: #fff;
+            margin: 1rem 0;
+        }
+        h1:after{
+            content: "Creative Agency"; 
+            animation: animate infinite 10s; 
+        }
+        @keyframes animate {     
+            50% { 
+                content: "Free Icons Fonts"; 
+            } 
+    
+            75% { 
+                content: "Beautiful Design"; 
+            } 
         }
         .description{
-            font-size: 1.3rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: #cfd1e3;
+            font-weight: 500;
             width: 70%;
-            letter-spacing: 1px;
-            line-height: 2rem;
-            margin-top: 0.7rem;
+            margin: auto;
         }
-        .link{
-            .btn{
-                margin-top: 1.5rem !important;
-                padding: 0.7rem 2rem;
-                text-transform: capitalize;
-                font-size: 1.1rem;
-            }
-        }
-    }
-}
-
-@media(max-width:700px){
-    .welcome-wrapper{
-        .welcome-text-wrapper{
+        .btn-wrapper{
             margin-top: 2rem;
-            margin-left: 2rem;
-            .welcome{
-                font-size: 1.5rem;
-            }
-            h1{
-                font-size: 2.5rem !important;
-            }
-            .description{
-                width: 90%;
-                font-size: 1rem;
-                letter-spacing: normal;
-            }
             .link{
+                text-decoration: none;
                 .btn{
-                    padding: 0.5rem 2rem;
+                    border: none;
+                    outline: none;
+                    color: #000000;
+                    border-radius: 2rem;
+                    padding: 1.2rem 3rem;
+                    font-size: 0.9rem;
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+                    margin: 0 0.5rem;
+                    display: inline-block;
+                    &:hover{
+                        background-color: #13b1c5;
+                        color: #fff;
+                    }
+                }
+                .btn.about{
+                    background-color: #13b1c5;
+                    color: #fff;
+                    &:hover{
+                        background-color: #fff;
+                        color: #000000;
+                    }
                 }
             }
         }
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .welcome-wrapper{
-        height: 80vh;
+        height: 100vh;
         .welcome-text-wrapper{
-            margin-left: 1.5rem;
-            .welcome{
-                font-size: 1.3rem;
-            }
             h1{
-                font-size: 2rem !important;
+                font-size: 2.5rem;
             }
             .description{
-                font-size: 1rem;
-                line-height: 1.5rem;
+                width: 100%;
+                font-size: 0.8rem;
+            }
+            .btn-wrapper{
+                margin-top: 0.5rem !important;
+                .link{
+                    .btn{
+                        font-size: 0.8rem;
+                        padding: 1rem 2rem;
+                    }
+                }
             }
         }
     }
+}
 
+@media(max-width: 500px){
+    .welcome-wrapper{
+        .welcome-text-wrapper{
+            h1{
+                font-size: 1.9rem;
+            }
+            .btn-wrapper{
+                .link{
+                    .btn{
+                        font-size: 0.7rem;
+                        padding: 0.7rem 2rem;
+                    }
+                }
+            }
+        }
+    }
 }
