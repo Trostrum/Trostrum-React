@@ -5,21 +5,7 @@
     background-color: #212332;
     .about-details{
         width: 50%;
-        .about-heading-wrapper{
-            .title{
-                color: #fff;
-                h1{
-                    font-size: 2.3rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                }
-                p{
-                    font-size: 1rem;
-                    font-weight: lighter;
-                    margin-top: -1rem;
-                }
-            }
-        }
+   
         .about-description{
             margin-top: 1.8rem;
             p{
@@ -75,13 +61,7 @@
         flex-direction: column;
         .about-details{
             width: 100%;
-            .about-heading-wrapper{
-                .title{
-                    h1{
-                        font-size: 2rem;
-                    }
-                }
-            }
+            
         }
         .about-description{
             p{
