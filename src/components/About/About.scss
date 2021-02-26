@@ -1,7 +1,7 @@
 .about-wrapper{
     display: flex;
     align-items: center;
-    padding: 5% 0;
+    padding: 5rem 0 6rem;
     background-color: #212332;
     .about-details{
         width: 50%;
@@ -48,7 +48,7 @@
     }
     .about-image{
         width: 50%;
-        text-align: center;
+        text-align: end;
         img{
             width: 80%;
         }
