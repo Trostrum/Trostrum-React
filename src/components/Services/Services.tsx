@@ -2,6 +2,7 @@ import Service from './Service'
 import Heading from './../Heading/Heading'
 import { Settings, Crop, Block, PieChart, Code, BarChart } from '@material-ui/icons'
 import './Service.scss'
+import Container from '../Container/Container'
 
 const services = [
   {
@@ -39,7 +40,7 @@ const services = [
     icon: <BarChart className='icon' />,
     title: 'Support',
     description: 'Your website works on any device: desktop, tablet or mobile and any device'
-  },
+  }
 ]
 
 const mappedData = services.map(service => {
@@ -48,11 +49,13 @@ const mappedData = services.map(service => {
 
 export default function Services() {
   return (
-    <section className='services-wrapper' id='services' >
-      <Heading heading='OUR SERVICES' subHeading='We see what others don’t see'/>
-      <div className='services'>
-        {mappedData}
-      </div>
+    <section className='services-wrapper' id='services'>
+      <Container>
+        <Heading heading='OUR SERVICES' subHeading='We see what others don’t see' />
+        <div className='services'>
+          {mappedData}
+        </div>
+      </Container>
     </section>
   )
 }
