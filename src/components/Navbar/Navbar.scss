@@ -39,7 +39,7 @@
       transition: all .5s ease-in-out;
       margin-left: 1.3rem;
       &:hover{
-        color: #007bff;
+        color: #13b1c5;
       }
     }
   }
@@ -85,7 +85,7 @@
 
       &:after {
         transition: all ease-in-out .2s;
-        background: none repeat scroll 0 0 #007bff;
+        background: none repeat scroll 0 0 #13b1c5;
         content: "";
         display: block;
         height: 1.5px;
@@ -93,7 +93,7 @@
       }
 
       &:hover {
-        color: #007bff;
+        color: #13b1c5;
         //border-bottom: 2px solid #007bff;
         &:after {
           width: 100%;
@@ -180,7 +180,7 @@
             margin-top: 1rem;
           }
           &:hover{
-            color: #007bff;
+            color: #13b1c5;
             border: none;
           }
         }
