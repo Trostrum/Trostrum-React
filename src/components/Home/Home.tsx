@@ -1,8 +1,7 @@
 import Navbar from '../Navbar/Navbar'
 import Welcome from './../Welcome/Welcome'
 import About from './../About/About'
-// import Banner from './../Banner/Banner'
-// import Services from './../Services/Services'
+import Services from './../Services/Services'
 // import Testimonials from './../Testimonials/Testimonials'
 // import LatestProduct from './../LatestProducts/LatestProducts'
 // import Contact from './../Contact/Contact'
@@ -14,12 +13,11 @@ export default function Home() {
       <Navbar />
       <Welcome />
       <About />
-      {/* <Banner />
       <Services />
-      <LatestProduct />
+      {/* <LatestProduct />
       <Testimonials />
       <Contact />
-      <Footer />  */}
+      <Footer /> */}
     </>
   )
 }

@@ -1,26 +1,45 @@
 import Service from './Service'
+import Heading from './../Heading/Heading'
+import { Settings, Crop, Block, PieChart, Code, BarChart } from '@material-ui/icons'
 import './Service.scss'
-import { Build, DriveEta, LocalCarWash } from '@material-ui/icons'
 
 const services = [
   {
     id: 1,
-    icon: <DriveEta className='icon' color='primary' />,
-    title: 'Sell & Exchange Cars',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae minus at quasi, consequatur delectus.'
+    icon: <Settings className='icon' />,
+    title: 'Responsive',
+    description: 'Your website works on any device: desktop, tablet or mobile and any device'
   },
   {
     id: 2,
-    icon: <Build className='icon' color='primary' />,
-    title: 'Recondition Cars',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae minus at quasi, consequatur delectus.'
+    icon: <Crop className='icon' />,
+    title: 'Customizable',
+    description: 'Your website works on any device: desktop, tablet or mobile and any device'
   },
   {
     id: 3,
-    icon: <LocalCarWash className='icon' color='primary' />,
-    title: 'Car Wash',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae minus at quasi, consequatur delectus.'
-  }
+    icon: <Block className='icon' />,
+    title: 'UI Kit',
+    description: 'Your website works on any device: desktop, tablet or mobile and any device'
+  },
+  {
+    id: 4,
+    icon: <PieChart className='icon' />,
+    title: 'Lego Base',
+    description: 'Your website works on any device: desktop, tablet or mobile and any device'
+  },
+  {
+    id: 5,
+    icon: <Code className='icon' />,
+    title: 'Clean Code',
+    description: 'Your website works on any device: desktop, tablet or mobile and any device'
+  },
+  {
+    id: 6,
+    icon: <BarChart className='icon' />,
+    title: 'Support',
+    description: 'Your website works on any device: desktop, tablet or mobile and any device'
+  },
 ]
 
 const mappedData = services.map(service => {
@@ -29,9 +48,8 @@ const mappedData = services.map(service => {
 
 export default function Services() {
   return (
-    <section id='services' className='services-wrapper'>
-      <h2>Our Services</h2>
-      <p>We sell variety of used cars and provide quality recondition services.</p>
+    <section className='services-wrapper' id='services' >
+      <Heading heading='OUR SERVICES' subHeading='We see what others don’t see'/>
       <div className='services'>
         {mappedData}
       </div>
