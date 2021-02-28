@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', 'Open Sans', sans-serif;
 }
 
-html, body, #root{
+
+html, body, #root {
+  font-size: 17px;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -16,7 +16,7 @@ html, body, #root{
   //overflow-x: hidden;
 }
 
-button{
+button {
   padding: 10px 55px;
   border-radius: 35px;
   font-size: 12px;
@@ -32,10 +32,17 @@ body {
   position: relative;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.items-center{
+.items-center {
   align-items: center;
+}
+
+.flex-column-sm {
+  flex-direction: column;
+  @media screen and (min-width: 576px) {
+    flex-direction: initial;
+  }
 }
