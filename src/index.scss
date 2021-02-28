@@ -8,7 +8,9 @@
   font-family: 'Dosis', sans-serif;
 }
 
+
 html, body, #root{
+  font-size: 14px;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -38,4 +40,11 @@ body {
 
 .items-center{
   align-items: center;
+}
+
+.flex-column-sm{
+  flex-direction: column;
+  @media screen and (min-width: 576px){
+    flex-direction: initial;
+  }
 }

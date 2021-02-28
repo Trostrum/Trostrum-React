@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className='about-wrapper' id='about'>
       <Container>
-        <div className={'flex items-center'}>
+        <div className={'flex items-center flex-column-sm'}>
           <div className='about-details'>
             <Heading heading='ABOUT US' subHeading="We see what others don't see"/>
             <div className='about-description'>
