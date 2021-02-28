@@ -37,6 +37,7 @@ export default function HomeNav() {
             <Link to='/' className='nav-item' onClick={toggleResponsive}>Home</Link>
             <a href='/#about' className='nav-item' onClick={toggleResponsive}>About</a>
             <a href='/#services' className='nav-item' onClick={toggleResponsive}>Services</a>
+            <a href='/#portfolio' className='nav-item' onClick={toggleResponsive}>Portfolio</a>
             <Link to='/products' className='nav-item' onClick={toggleResponsive}>Products</Link>
             <a href='/#contact' className='nav-item' onClick={toggleResponsive}>Contact</a>
           </div>
