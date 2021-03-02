@@ -1,0 +1,64 @@
+.pricing-wrapper {
+  background-color: #212332;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  .price-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .price {
+      background-color: #fff;
+      text-align: center;
+      padding-bottom: 3rem;
+      .service-type {
+        background: #f5f6fb;
+        width: 100%;
+        border-bottom: 1px solid #dadee4;
+        h3 {
+          padding: 25px;
+          margin: 0;
+          color: #6c6b6b;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+      }
+      .service-details {
+        margin-bottom: 2rem;
+        h4 {
+          font-size: 50px;
+          font-weight: 700;
+          color: #323d47;
+          padding: 0;
+          margin-top: 40px;
+          position: relative;
+        }
+        .service-list {
+          margin-top: -2.5rem;
+          p {
+            font-size: 16px;
+            color: #868e96;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .price-btn {
+        background: #13b1c5;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 50px;
+        border-radius: 35px;
+        margin-bottom: 40px;
+        text-decoration: none;
+      }
+    }
+  }
+}
