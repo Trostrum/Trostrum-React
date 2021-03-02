@@ -31,7 +31,7 @@ export default function Contact() {
               <input type='email' placeholder='Email' className='input' />
             </div>
             <div className='input-wrapper'>
-              <textarea placeholder='Message' rows={8} className='input' ></textarea>
+              <textarea placeholder='Message' rows={8} className='input' />
             </div>
             <button type='submit' className='submit-btn'>Send Now!</button>
           </form>
