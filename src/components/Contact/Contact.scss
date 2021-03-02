@@ -3,29 +3,31 @@
   padding-bottom: 6rem;
   background-color: #212332;
   background-image: linear-gradient(
-      to bottom,
-      rgb(34, 40, 49, 0.97),
-      rgba(34, 40, 49, 0.95)
-    ),
-    url('./../../images/stats.jpg');
+                  to bottom,
+                  rgb(34, 40, 49, 0.97),
+                  rgba(34, 40, 49, 0.95)
+  ),
+  url('./../../images/stats.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   .contact {
     display: flex;
-    //align-items: center;
     margin-top: 2rem;
     @media (max-width: 800px) {
       flex-direction: column;
     }
+
     form {
-      //width: 65%;
+      width: 65%;
       height: 100%;
       margin-top: 0;
       @media (max-width: 800px) {
         width: 100%;
 
       }
+
       .input-wrapper {
         .input {
           background: transparent;
@@ -36,12 +38,11 @@
           border-radius: 15px;
           margin-bottom: 10px;
           outline: none;
-          //margin-top: -1rem;
         }
       }
+
       .submit-btn {
         width: 100%;
-        //margin-top: -0.5rem;
         padding: 15px;
         border-radius: 15px;
         font-size: 16px;
@@ -53,6 +54,7 @@
         background: #13b1c5;
       }
     }
+
     .contact-details {
       width: 35%;
       padding: 0 5%;
@@ -61,17 +63,22 @@
         width: 100%;
         margin-top: 1rem;
       }
+
       .contact-item {
         margin-bottom: 3.7rem;
-        &:last-of-type{
+
+        &:last-of-type {
           margin-bottom: 0;
         }
+
         .icon {
           color: #13b1c5;
           font-size: 1.5rem;
         }
+
         .text-wrapper {
           margin-top: -0.5rem;
+
           p {
             color: #ffffff;
             font-size: 0.75rem;
