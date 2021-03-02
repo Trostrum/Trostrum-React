@@ -7,7 +7,7 @@ import Stats from './../Stats/Stats'
 import Contact from './../Contact/Contact'
 // import Testimonials from './../Testimonials/Testimonials'
 // import LatestProduct from './../LatestProducts/LatestProducts'
-// import Footer from './../Footer/Footer'
+import Footer from './../Footer/Footer'
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
       <Portfolio />
       <Stats />
       <Contact />
+      <Footer />
       {/* <LatestProduct />
-      <Testimonials />
-      <Footer /> */}
+      <Testimonials /> */}
     </>
   )
 }
