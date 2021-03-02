@@ -4,9 +4,9 @@ import About from './../About/About'
 import Services from './../Services/Services'
 import Portfolio from './../Portfolio/Portfolio'
 import Stats from './../Stats/Stats'
+import Contact from './../Contact/Contact'
 // import Testimonials from './../Testimonials/Testimonials'
 // import LatestProduct from './../LatestProducts/LatestProducts'
-// import Contact from './../Contact/Contact'
 // import Footer from './../Footer/Footer'
 
 export default function Home() {
@@ -18,9 +18,9 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Stats />
+      <Contact />
       {/* <LatestProduct />
       <Testimonials />
-      <Contact />
       <Footer /> */}
     </>
   )
