@@ -33,6 +33,7 @@ export default function Contact() {
             <div className='input-wrapper'>
               <textarea placeholder='Message' rows={8} className='input' ></textarea>
             </div>
+            <button type='submit' className='submit-btn'>Send Now!</button>
           </form>
           <div className='contact-details'>
             <div className='contact-item'>
