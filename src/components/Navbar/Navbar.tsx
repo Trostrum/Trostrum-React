@@ -1,6 +1,6 @@
 import './Navbar.scss'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import navBrand from '../../images/navbrand.webp'
 
@@ -8,6 +8,12 @@ export default function HomeNav() {
 
   // state for responsive navbar
   const [isResponsive, setIsResponsive] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (isResponsive) {
+      document.body.style.overflow = 'hidden'
+    }
+  }, [isResponsive])
 
   const toggleResponsive = () => {
     setIsResponsive(!isResponsive)
@@ -31,7 +37,7 @@ export default function HomeNav() {
       <nav className='navbar-wrapper'>
         <div className='navbar'>
           <div className='nav-brand'>
-            <img src={navBrand} alt={'trostrum'}/>
+            <img src={navBrand} alt={'trostrum'} />
           </div>
           <div className={`nav-list ${isResponsive ? 'responsive' : ''}`}>
             <a href='/#home' className='nav-item' onClick={toggleResponsive}>Home</a>
@@ -45,9 +51,9 @@ export default function HomeNav() {
             <a href='/#contact' className='nav-item' onClick={toggleResponsive}>Contact</a>
           </div>
           <div className={`hamburger ${isResponsive ? 'open' : ''}`} onClick={toggleResponsive}>
-            <div className='div1'/>
-            <div className='div2'/>
-            <div className='div3'/>
+            <div className='div1' />
+            <div className='div2' />
+            <div className='div3' />
           </div>
         </div>
       </nav>
