@@ -12,6 +12,8 @@ export default function HomeNav() {
   useEffect(() => {
     if (isResponsive) {
       document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'hidden'
     }
   }, [isResponsive])
 
