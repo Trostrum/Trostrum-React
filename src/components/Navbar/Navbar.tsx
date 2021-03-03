@@ -13,7 +13,6 @@ export default function HomeNav() {
     if (isResponsive) {
       document.body.style.overflow = 'hidden'
     } else {
-      console.log('passed')
       document.body.style.overflow = 'scroll'
     }
   }, [isResponsive])
