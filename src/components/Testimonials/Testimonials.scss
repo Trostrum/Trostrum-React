@@ -3,14 +3,17 @@
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
+
   h2 {
     font-size: 30px;
     font-weight: 500;
     color: #ffffff;
   }
+
   .testimonial {
     padding: 2.7rem 0;
     margin-top: -1.3rem;
+
     p {
       font-size: 1.2rem;
       width: 55%;
@@ -20,6 +23,7 @@
       font-weight: 300;
       color: #cfd1e3;
     }
+
     img {
       border-radius: 50%;
       width: 7rem;
@@ -33,7 +37,6 @@
 
 @media (max-width: 1100px) {
   .testimonials-wrapper {
-    padding: 2rem 0;
     .testimonial {
       p {
         width: 80%;
@@ -46,16 +49,17 @@
 
 @media (max-width: 800px) {
   .testimonials-wrapper {
-    padding: 1rem 0;
     h2 {
       font-size: 2rem;
     }
+
     p {
       font-size: 1rem;
       width: 90%;
       margin: auto;
       margin-top: 1rem;
     }
+
     .testimonial {
       p {
         width: 95%;
