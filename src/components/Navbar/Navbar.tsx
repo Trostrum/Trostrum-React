@@ -17,6 +17,12 @@ export default function HomeNav() {
     }
   }, [isResponsive])
 
+  const closeResponsive = () => {
+    if (isResponsive) {
+      setIsResponsive(!isResponsive)
+    }
+  }
+
   const toggleResponsive = () => {
     setIsResponsive(!isResponsive)
   }
@@ -42,15 +48,15 @@ export default function HomeNav() {
             <img src={navBrand} alt={'trostrum'} />
           </div>
           <div className={`nav-list ${isResponsive ? 'responsive' : ''}`}>
-            <a href='/#home' className='nav-item' onClick={toggleResponsive}>Home</a>
-            <a href='/#about' className='nav-item' onClick={toggleResponsive}>About</a>
-            <a href='/#services' className='nav-item' onClick={toggleResponsive}>Services</a>
-            <a href='/#portfolio' className='nav-item' onClick={toggleResponsive}>Portfolio</a>
-            <a href='/#testimonials' className='nav-item' onClick={toggleResponsive}>Testimonials</a>
-            <a href='/#teams' className='nav-item' onClick={toggleResponsive}>Teams</a>
-            <a href='/#price' className='nav-item' onClick={toggleResponsive}>Price</a>
-            <a href='/#blog' className='nav-item' onClick={toggleResponsive}>Blog</a>
-            <a href='/#contact' className='nav-item' onClick={toggleResponsive}>Contact</a>
+            <a href='/#home' className='nav-item' onClick={closeResponsive}>Home</a>
+            <a href='/#about' className='nav-item' onClick={closeResponsive}>About</a>
+            <a href='/#services' className='nav-item' onClick={closeResponsive}>Services</a>
+            <a href='/#portfolio' className='nav-item' onClick={closeResponsive}>Portfolio</a>
+            <a href='/#testimonials' className='nav-item' onClick={closeResponsive}>Testimonials</a>
+            <a href='/#teams' className='nav-item' onClick={closeResponsive}>Teams</a>
+            <a href='/#price' className='nav-item' onClick={closeResponsive}>Price</a>
+            <a href='/#blog' className='nav-item' onClick={closeResponsive}>Blog</a>
+            <a href='/#contact' className='nav-item' onClick={closeResponsive}>Contact</a>
           </div>
           <div className={`hamburger ${isResponsive ? 'open' : ''}`} onClick={toggleResponsive}>
             <div className='div1' />
