@@ -34,11 +34,14 @@ export default function HomeNav() {
             <img src={navBrand} alt={'trostrum'}/>
           </div>
           <div className={`nav-list ${isResponsive ? 'responsive' : ''}`}>
-            <Link to='/' className='nav-item' onClick={toggleResponsive}>Home</Link>
+            <a href='/#home' className='nav-item' onClick={toggleResponsive}>Home</a>
             <a href='/#about' className='nav-item' onClick={toggleResponsive}>About</a>
             <a href='/#services' className='nav-item' onClick={toggleResponsive}>Services</a>
             <a href='/#portfolio' className='nav-item' onClick={toggleResponsive}>Portfolio</a>
-            <Link to='/products' className='nav-item' onClick={toggleResponsive}>Products</Link>
+            <a href='/#testimonials' className='nav-item' onClick={toggleResponsive}>Testimonials</a>
+            <a href='/#teams' className='nav-item' onClick={toggleResponsive}>Teams</a>
+            <a href='/#price' className='nav-item' onClick={toggleResponsive}>Price</a>
+            <a href='/#blog' className='nav-item' onClick={toggleResponsive}>Blog</a>
             <a href='/#contact' className='nav-item' onClick={toggleResponsive}>Contact</a>
           </div>
           <div className={`hamburger ${isResponsive ? 'open' : ''}`} onClick={toggleResponsive}>

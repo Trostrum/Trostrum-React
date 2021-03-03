@@ -18,7 +18,7 @@ export default function Welcome() {
   }, [])
 
   return (
-    <div className='welcome-wrapper'>
+    <div className='welcome-wrapper' id='home'>
       <div className='welcome-text-wrapper'>
         <p>Trostrum</p>
         {/* <h1>Creative Agency</h1> */}

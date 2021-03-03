@@ -1,6 +1,7 @@
 import './Testimonials.scss'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import AvatarImage from './../../images/avatar.jpg'
 
 export default function Testimonials() {
   const responsive = {
@@ -18,9 +19,8 @@ export default function Testimonials() {
     }
   }
   return (
-    <div className='testimonials-wrapper'>
-      <h2>Testimonials</h2>
-      <p>What our clients have to say about us.</p>
+    <div className='testimonials-wrapper' id='testimonials'>
+      <h2>What customers say about us ?</h2>
       <Carousel
         swipeable={true}
         draggable={true}
@@ -33,13 +33,16 @@ export default function Testimonials() {
         autoPlaySpeed={4000}
       >
         <div className='testimonial'>
-          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolor explicabo placeat commodi consequuntur dolores.</h3>
+          <img src={AvatarImage} alt='' />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum. Fusce faucibus ligula scelerisque, eleifend turpis in porttitor sapien. Sed sed purus odio.</p>
         </div>
         <div className='testimonial'>
-          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolor explicabo placeat commodi consequuntur dolores.</h3>
+          <img src={AvatarImage} alt='' />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum. Fusce faucibus ligula scelerisque, eleifend turpis in porttitor sapien. Sed sed purus odio.</p>
         </div>
         <div className='testimonial'>
-          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti dolor explicabo placeat commodi consequuntur dolores.</h3>
+          <img src={AvatarImage} alt='' />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum. Fusce faucibus ligula scelerisque, eleifend turpis inport titor sapien. Sed sed purus odio.</p>
         </div>
       </Carousel>
     </div>
