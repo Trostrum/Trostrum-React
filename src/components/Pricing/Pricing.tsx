@@ -48,7 +48,7 @@ export default function Pricing() {
     return <Price key={index} service={price.service} title={price.title} details={price.details} link={price.link} />
   })
   return (
-    <div className='pricing-wrapper'>
+    <div className='pricing-wrapper' id='price'>
       <Container>
         <Heading heading="Pricing" subHeading="Choose your perfect plan" />
         <div className='price-wrapper'>

@@ -3,11 +3,11 @@
   padding-bottom: 6rem;
   background-color: #212332;
   background-image: linear-gradient(
-                  to bottom,
-                  rgb(34, 40, 49, 0.97),
-                  rgba(34, 40, 49, 0.95)
-  ),
-  url('./../../images/stats.jpg');
+      to bottom,
+      rgb(34, 40, 49, 0.97),
+      rgba(34, 40, 49, 0.95)
+    ),
+    url('./../../images/stats.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,7 +25,6 @@
       margin-top: 0;
       @media (max-width: 800px) {
         width: 100%;
-
       }
 
       .input-wrapper {

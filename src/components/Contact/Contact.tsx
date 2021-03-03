@@ -19,7 +19,7 @@ export default function Contact() {
     setFunction(value)
   }
   return (
-    <div className='contact-wrapper'>
+    <div className='contact-wrapper' id='contact'>
       <Container>
         <Heading heading="Contact Us" subHeading="Keep in Touch" />
         <div className='contact'>
