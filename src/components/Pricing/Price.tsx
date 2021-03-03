@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom'
 
 interface PriceInterface {
   service: string,
-  title : string,
+  title: string,
   details: Array<string>,
   link: string
 }
+
 export default function Price(props: PriceInterface) {
   const mappedDetails = props.details.map((detail: string) => {
-    return <p>{detail}</p>
+    return <p key={detail}>{detail}</p>
   })
   return (
     <div className='price'>
